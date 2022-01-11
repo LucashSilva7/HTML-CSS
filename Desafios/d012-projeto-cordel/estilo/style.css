@@ -24,18 +24,20 @@ html, body{
 
 header{
     background-color: black;
-    color: white;
     text-align: center;
-    font-family: var(--fonte2);
+    color: white;
 }
 
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
     font-size: 5vw;
+    font-family: var(--fonte2);
+    
 }
 
 header > p{
+    color: rgba(255, 255, 255, 0.61);
     padding-bottom: 50px;
 }
 
@@ -49,23 +51,47 @@ header a:hover, footer a:hover{
     text-decoration: underline;
 }
 
+
+
+
+
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section > p{
+    padding-bottom: 2em;
 }
 
 section.normal{
     background-color: white;
     color: black;
-    font-size: 3vw;
 }
+
+
+
 
 section.imagem{
-
+    background-color: rgba(0, 0, 0, 0.274);
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.363);
+    box-shadow: inset 0px 0px 30px 5px rgba(0, 0, 0, 0.527);
 }
+
+section.imagem > p{
+    padding: 0px 5px;
+    color: white;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+
+
 
 section#joaninha{
     background-image: url(../imagens/background001.jpg);
@@ -74,7 +100,7 @@ section#joaninha{
     position: relative;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: right center;
 }
 
 section#paginas{
@@ -89,17 +115,14 @@ section#paginas{
 
 
 
-section.imagem > p{
-    padding: 0px 5px;
-    color: white;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.253);
-}
+
 
 
 footer{
-    background-color: black;
+    
+    font-size: 0.5em;
+    background-color: rgba(0, 0, 0, 0.479);
     text-align: center;
-    color: white;
-    padding: 10px;
+    color: rgba(255, 255, 255, 0.445);
+    padding: 5px 10px;
 }
